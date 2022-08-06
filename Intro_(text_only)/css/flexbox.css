@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.flexbox-items-1 {
+    background-color: #add8e6;
+    width: 100px;
+}
+
+.flexbox-items-2 {
+    background-color: #f08080;
+    width: 100px;
+}
+
+.flexbox-content {
+    height: 70px;
+    border: 2px solid black;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nav {
+    margin: 50px auto;
+    border: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-title {
+    flex: 1;
+    margin: 10px;
+    font-weight: 500;
+}
+
+.nav-stats {
+    margin: 10px;
+    text-align: right;
+    border-radius: 12px;
+    padding: 1.5px 10px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(47, 103, 224);
+}
+
+
+/* ---------------------- */
+
+.list-user {
+    margin: 50px auto;
+    width: 350px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    justify-content: space-evenly;
+}
+
+.user {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.avt-user {
+    width: 60px;
+    object-position: center;
+    margin-left: 10px;
+}
+
+.avt-user img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.user-overview {
+    flex: 1;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-description,
+.user-level {
+    color: #6d6d6d;
+    font-size: 12px;
+}
+
+.follow-user {
+    color: white;
+    background-color: #347effcf;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    padding: 8px 6px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.follow-user:hover {
+    background-color: #347effa9;
+}
+
+.follow-user:active {
+    background-color: #347eff7a;
+
+}
+
+/* ---------------------- */
+
+.nav-bar {
+    width: 70%;
+    margin: 50px auto;
+    display: flex;
+    height: 50px;
+    background-color: #75558dfd;
+    align-items: center;
+}
+
+.left-nav {
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    margin-left: 90px;
+    margin-right: 30px;
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 500px;
+    padding: 5px 15px;
+    border-radius: 55px;
+    border: none;
+}
+
+.search-bar-button::placeholder:active {
+    border: none;
+}
+
+.right-nav {
+    margin-right: 20px;
+}
+
+.right-nav button {
+    width: 100%;
+    padding: 5px 10px;
+    color: white;
+    background-color: #724c8f;
+    border: 1.5px white solid;
+    cursor: pointer;
+}
+
+.right-nav button:hover {
+    background-color: #7f6b8e;
+}
+
+.right-nav button:active {
+    padding: 4.5px 9.5px;
+}
+
+/* ---------------------- */
+
+/* GMAIL */
+
+.gmail-list {
+    font-size: 16px;
+    width: 410px;
+    margin: 100px auto;
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px #21090940;
+    border-radius: 5px;
+}
+
+.gmail {
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.gmail:hover {
+    background-color: #6d6d6d1a;
+}
+
+.gmail:active {
+    background-color: #6d6d6d78;
+}
+
+.gmail-head-title {
+    font-size: 14px;
+    padding: 5px 0 10px 15px;
+    color: #6d6d6d;
+    text-transform: uppercase;
+}
+
+.gmail-overview {
+    display: flex;
+    align-items: center;
+}
+
+
+.gmail-avt {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.gmail-avt img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.gmail-detail {
+    flex: 1;
+}
+
+.gmail-sender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gmail-sender .name-sender {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gmail-sender .time-send {
+    font-size: 14px;
+    color: #707070;
+}
+
+.gmail-title {
+    font-weight: bold;
+}
+
+.gmail-content {
+    color: #6d6d6d;
+}
+
+/* ---------------------- */
+
+.tweet {
+    width: 430px;
+    margin: 50px auto;
+    display: flex;
+    border: none;
+    box-shadow: 0 0 5px #21090940;
+    border-radius: 5px;
+}
+
+.tweet-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    line-height: 1.2;
+    flex: 1;
+}
+
+.tweet-author {
+    font-weight: bold;
+}
+
+.tweet-author a {
+    text-decoration: none;
+    color: black;
+}
+
+.tweet-author-handle,
+.tweet-link {
+    font-weight: 500;
+    color: #858585;
+}
+
+
+.tweet-avt {
+    width: 50px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.tweet-avt img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+}
+
+.tweet-overview {
+    display: flex;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 15px;
+    height: 100px;
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.tweet-overview:hover {
+    background-color: #cdcdcd73;
+}
+
+.tweet-overview:active {
+    background-color: #cdcdcd;
+}
+
+.tweet-overview-img {
+    width: 90px;
+}
+
+.tweet-overview-img img {
+    height: 100%;
+    width: 90px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    object-fit: cover;
+
+}
+
+.tweet-overview-content {
+    margin-left: 12px;
+    margin-top: 15px;
+    flex: 1;
+}

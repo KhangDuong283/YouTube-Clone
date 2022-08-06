@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .grid-gallery {
+            background-color: lightpink;
+        }
+
+        .g1 {
+            background-color: lightblue;
+            grid-column: 1 / span 2;
+        }
+
+        .g2 {
+            background-color: lightblue;
+            grid-column: 3 / span 2;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./CSS/index.css">
+
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-gallery g1">
+            KD
+        </div>
+        <div class="grid-gallery">
+            KD
+        </div>
+        <div class="grid-gallery">
+            KD
+        </div>
+        <div class="grid-gallery">
+            KD
+        </div>
+        <div class="grid-gallery">
+            KD
+        </div>
+        <div class="grid-gallery g2">
+            KD
+        </div>
+    </div>
+</body>
+
+</html>
